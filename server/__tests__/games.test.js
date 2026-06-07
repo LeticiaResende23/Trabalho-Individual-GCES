@@ -1,4 +1,4 @@
-/* eslint-env jest */
+/* global test, expect */
 
 const { GameCollection } = require('../games');
 
