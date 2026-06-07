@@ -24,6 +24,9 @@ jobs:
       - name: Install dependencies
         run: npm ci --include=dev
 
+      - name: Audit dependencies
+        run: npm audit --audit-level=moderate
+
       - name: Lint frontend and backend
         run: npm run lint
 
@@ -32,3 +35,31 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+  codeql:
+    name: CodeQL Analysis
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: javascript
+
+      - name: Setup Node.js for CodeQL
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies for analysis
+        run: npm ci --include=dev
+
+      - name: Run CodeQL analysis
+        uses: github/codeql-action/analyze@v2
