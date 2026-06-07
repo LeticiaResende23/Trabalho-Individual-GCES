@@ -1,3 +1,5 @@
+/* eslint-env jest */
+
 const { GameCollection } = require('../games');
 
 test('create, retrieve and remove game in GameCollection', () => {
