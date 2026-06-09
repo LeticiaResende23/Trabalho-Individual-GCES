@@ -1,5 +1,9 @@
 function normalizeGameName(gameName) {
-  return String(gameName || '').trim().toLowerCase();
+  try {
+    return String(gameName || '').trim().toLowerCase();
+  } catch (error) {
+    return '';
+  }
 }
 
 exports.normalizeGameName = normalizeGameName;
