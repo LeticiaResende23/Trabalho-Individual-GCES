@@ -15,6 +15,14 @@ describe('Fuzzing tests for server input resilience', () => {
     );
   });
 
+  test('game name normalization should fallback for non-coercible payloads', () => {
+    expect(normalizeGameName({
+      toString() {
+        throw new Error('invalid coercion');
+      }
+    })).toBe('');
+  });
+
   test('normalized random game names should be safe for game collection operations', () => {
     fc.assert(
       fc.property(fc.string(), (payload) => {
