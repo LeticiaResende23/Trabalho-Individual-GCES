@@ -6,7 +6,8 @@ var path = require('path'),
     server = http.createServer(app),
     io = new SocketIOServer(server),
     GameCollection = require('./games.js').GameCollection,
-  db = require('./db.js'),
+    normalizeGameName = require('./input.js').normalizeGameName,
+    db = require('./db.js'),
     games = new GameCollection(),
     port = process.env.PORT || 55555;
 
@@ -25,11 +26,7 @@ var Responses = {
   Requests = {
     CREATE_GAME: 'create-game',
     JOIN_GAME: 'join-game'
-  };
-
-function normalizeGameName(gameName) {
-  return String(gameName || '').trim().toLowerCase();
-}
+};
 
 io.on('connection', function (socket) {
   socket.on(Requests.CREATE_GAME, function (gameName) {
