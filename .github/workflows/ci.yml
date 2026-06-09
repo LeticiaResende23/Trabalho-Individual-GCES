@@ -40,12 +40,10 @@ jobs:
       - name: Run tests with coverage
         run: npm run test:coverage
 
-      - name: SonarCloud token missing
-        if: ${{ env.SONAR_TOKEN == '' }}
-        run: echo "::warning::SONAR_TOKEN is not configured. Add it as a GitHub Actions secret to enable SonarCloud analysis."
+      - name: Validate SonarCloud token
+        run: test -n "$SONAR_TOKEN"
 
       - name: SonarCloud Quality Gate
-        if: ${{ env.SONAR_TOKEN != '' }}
         uses: SonarSource/sonarqube-scan-action@v7
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
