@@ -1,0 +1,207 @@
+﻿build-and-lint	Set up job	´╗┐2026-06-07T18:33:43.3437091Z Current runner version: '2.334.0'
+build-and-lint	Set up job	2026-06-07T18:33:43.3461814Z ##[group]Runner Image Provisioner
+build-and-lint	Set up job	2026-06-07T18:33:43.3462843Z Hosted Compute Agent
+build-and-lint	Set up job	2026-06-07T18:33:43.3463492Z Version: 20260520.533
+build-and-lint	Set up job	2026-06-07T18:33:43.3464137Z Commit: 189110e25284a9812c124fd27b339e2fb4f2f9db
+build-and-lint	Set up job	2026-06-07T18:33:43.3464877Z Build Date: 2026-05-20T17:44:04Z
+build-and-lint	Set up job	2026-06-07T18:33:43.3465600Z Worker ID: {67f7de88-d03d-4cb3-97dc-8d39e1892582}
+build-and-lint	Set up job	2026-06-07T18:33:43.3466304Z Azure Region: westus3
+build-and-lint	Set up job	2026-06-07T18:33:43.3466851Z ##[endgroup]
+build-and-lint	Set up job	2026-06-07T18:33:43.3468332Z ##[group]Operating System
+build-and-lint	Set up job	2026-06-07T18:33:43.3468971Z Ubuntu
+build-and-lint	Set up job	2026-06-07T18:33:43.3469574Z 24.04.4
+build-and-lint	Set up job	2026-06-07T18:33:43.3470101Z LTS
+build-and-lint	Set up job	2026-06-07T18:33:43.3470630Z ##[endgroup]
+build-and-lint	Set up job	2026-06-07T18:33:43.3471282Z ##[group]Runner Image
+build-and-lint	Set up job	2026-06-07T18:33:43.3472303Z Image: ubuntu-24.04
+build-and-lint	Set up job	2026-06-07T18:33:43.3472940Z Version: 20260525.161.1
+build-and-lint	Set up job	2026-06-07T18:33:43.3474020Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260525.161/images/ubuntu/Ubuntu2404-Readme.md
+build-and-lint	Set up job	2026-06-07T18:33:43.3475754Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260525.161
+build-and-lint	Set up job	2026-06-07T18:33:43.3476753Z ##[endgroup]
+build-and-lint	Set up job	2026-06-07T18:33:43.3477933Z ##[group]GITHUB_TOKEN Permissions
+build-and-lint	Set up job	2026-06-07T18:33:43.3479795Z Contents: read
+build-and-lint	Set up job	2026-06-07T18:33:43.3480467Z Metadata: read
+build-and-lint	Set up job	2026-06-07T18:33:43.3481048Z Packages: read
+build-and-lint	Set up job	2026-06-07T18:33:43.3482043Z ##[endgroup]
+build-and-lint	Set up job	2026-06-07T18:33:43.3484318Z Secret source: Actions
+build-and-lint	Set up job	2026-06-07T18:33:43.3485077Z Prepare workflow directory
+build-and-lint	Set up job	2026-06-07T18:33:43.3825191Z Prepare all required actions
+build-and-lint	Set up job	2026-06-07T18:33:43.3863143Z Getting action download info
+build-and-lint	Set up job	2026-06-07T18:33:43.7953547Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+build-and-lint	Set up job	2026-06-07T18:33:43.9014243Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+build-and-lint	Set up job	2026-06-07T18:33:44.0851311Z Complete job name: build-and-lint
+build-and-lint	Checkout repository	´╗┐2026-06-07T18:33:44.1570559Z ##[group]Run actions/checkout@v4
+build-and-lint	Checkout repository	2026-06-07T18:33:44.1571433Z with:
+build-and-lint	Checkout repository	2026-06-07T18:33:44.1572197Z   repository: LeticiaResende23/Trabalho-Individual-GCES
+build-and-lint	Checkout repository	2026-06-07T18:33:44.1576759Z   token: ***
+build-and-lint	Checkout repository	2026-06-07T18:33:44.1577183Z   ssh-strict: true
+build-and-lint	Checkout repository	2026-06-07T18:33:44.1577611Z   ssh-user: git
+build-and-lint	Checkout repository	2026-06-07T18:33:44.1578040Z   persist-credentials: true
+build-and-lint	Checkout repository	2026-06-07T18:33:44.1578514Z   clean: true
+build-and-lint	Checkout repository	2026-06-07T18:33:44.1578950Z   sparse-checkout-cone-mode: true
+build-and-lint	Checkout repository	2026-06-07T18:33:44.1579467Z   fetch-depth: 1
+build-and-lint	Checkout repository	2026-06-07T18:33:44.1579888Z   fetch-tags: false
+build-and-lint	Checkout repository	2026-06-07T18:33:44.1580319Z   show-progress: true
+build-and-lint	Checkout repository	2026-06-07T18:33:44.1580756Z   lfs: false
+build-and-lint	Checkout repository	2026-06-07T18:33:44.1581158Z   submodules: false
+build-and-lint	Checkout repository	2026-06-07T18:33:44.1581727Z   set-safe-directory: true
+build-and-lint	Checkout repository	2026-06-07T18:33:44.1582453Z ##[endgroup]
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2686092Z Syncing repository: LeticiaResende23/Trabalho-Individual-GCES
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2688032Z ##[group]Getting Git version info
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2688966Z Working directory is '/home/runner/work/Trabalho-Individual-GCES/Trabalho-Individual-GCES'
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2690214Z [command]/usr/bin/git version
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2770715Z git version 2.54.0
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2797251Z ##[endgroup]
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2813506Z Temporarily overriding HOME='/home/runner/work/_temp/1e7e2a28-c574-4446-aaac-988a97236da7' before making global git config changes
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2816101Z Adding repository directory to the temporary git global config as a safe directory
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2827478Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Trabalho-Individual-GCES/Trabalho-Individual-GCES
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2872182Z Deleting the contents of '/home/runner/work/Trabalho-Individual-GCES/Trabalho-Individual-GCES'
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2875255Z ##[group]Initializing the repository
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2879973Z [command]/usr/bin/git init /home/runner/work/Trabalho-Individual-GCES/Trabalho-Individual-GCES
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2974316Z hint: Using 'master' as the name for the initial branch. This default branch name
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2976053Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2977493Z hint: to use in all of your new repositories, which will suppress this warning,
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2979170Z hint: call:
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2980050Z hint:
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2981318Z hint: 	git config --global init.defaultBranch <name>
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2982903Z hint:
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2983650Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2984631Z hint: 'development'. The just-created branch can be renamed via this command:
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2985368Z hint:
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2985775Z hint: 	git branch -m <name>
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2986250Z hint:
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2987190Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2988643Z Initialized empty Git repository in /home/runner/work/Trabalho-Individual-GCES/Trabalho-Individual-GCES/.git/
+build-and-lint	Checkout repository	2026-06-07T18:33:44.2992573Z [command]/usr/bin/git remote add origin https://github.com/LeticiaResende23/Trabalho-Individual-GCES
+build-and-lint	Checkout repository	2026-06-07T18:33:44.3032535Z ##[endgroup]
+build-and-lint	Checkout repository	2026-06-07T18:33:44.3033301Z ##[group]Disabling automatic garbage collection
+build-and-lint	Checkout repository	2026-06-07T18:33:44.3036540Z [command]/usr/bin/git config --local gc.auto 0
+build-and-lint	Checkout repository	2026-06-07T18:33:44.3063881Z ##[endgroup]
+build-and-lint	Checkout repository	2026-06-07T18:33:44.3064645Z ##[group]Setting up auth
+build-and-lint	Checkout repository	2026-06-07T18:33:44.3070311Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-lint	Checkout repository	2026-06-07T18:33:44.3102555Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-lint	Checkout repository	2026-06-07T18:33:44.3441114Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-lint	Checkout repository	2026-06-07T18:33:44.3469283Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-lint	Checkout repository	2026-06-07T18:33:44.3681318Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-lint	Checkout repository	2026-06-07T18:33:44.3719114Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-lint	Checkout repository	2026-06-07T18:33:44.3938784Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build-and-lint	Checkout repository	2026-06-07T18:33:44.3975125Z ##[endgroup]
+build-and-lint	Checkout repository	2026-06-07T18:33:44.3976417Z ##[group]Fetching the repository
+build-and-lint	Checkout repository	2026-06-07T18:33:44.3984220Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +70550f8c4d5e11e6e02af75a4d7e017a2547cf23:refs/remotes/origin/main
+build-and-lint	Checkout repository	2026-06-07T18:33:46.1349374Z From https://github.com/LeticiaResende23/Trabalho-Individual-GCES
+build-and-lint	Checkout repository	2026-06-07T18:33:46.1351488Z  * [new ref]         70550f8c4d5e11e6e02af75a4d7e017a2547cf23 -> origin/main
+build-and-lint	Checkout repository	2026-06-07T18:33:46.1384663Z ##[endgroup]
+build-and-lint	Checkout repository	2026-06-07T18:33:46.1386889Z ##[group]Determining the checkout info
+build-and-lint	Checkout repository	2026-06-07T18:33:46.1389252Z ##[endgroup]
+build-and-lint	Checkout repository	2026-06-07T18:33:46.1392713Z [command]/usr/bin/git sparse-checkout disable
+build-and-lint	Checkout repository	2026-06-07T18:33:46.1437307Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build-and-lint	Checkout repository	2026-06-07T18:33:46.1465047Z ##[group]Checking out the ref
+build-and-lint	Checkout repository	2026-06-07T18:33:46.1468750Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build-and-lint	Checkout repository	2026-06-07T18:33:46.5222060Z Switched to a new branch 'main'
+build-and-lint	Checkout repository	2026-06-07T18:33:46.5223788Z branch 'main' set up to track 'origin/main'.
+build-and-lint	Checkout repository	2026-06-07T18:33:46.5239841Z ##[endgroup]
+build-and-lint	Checkout repository	2026-06-07T18:33:46.5286442Z [command]/usr/bin/git log -1 --format=%H
+build-and-lint	Checkout repository	2026-06-07T18:33:46.5311422Z 70550f8c4d5e11e6e02af75a4d7e017a2547cf23
+build-and-lint	Setup Node.js	´╗┐2026-06-07T18:33:46.5577689Z ##[group]Run actions/setup-node@v4
+build-and-lint	Setup Node.js	2026-06-07T18:33:46.5578102Z with:
+build-and-lint	Setup Node.js	2026-06-07T18:33:46.5578348Z   node-version: 20
+build-and-lint	Setup Node.js	2026-06-07T18:33:46.5578595Z   cache: npm
+build-and-lint	Setup Node.js	2026-06-07T18:33:46.5578830Z   always-auth: false
+build-and-lint	Setup Node.js	2026-06-07T18:33:46.5579092Z   check-latest: false
+build-and-lint	Setup Node.js	2026-06-07T18:33:46.5582640Z   token: ***
+build-and-lint	Setup Node.js	2026-06-07T18:33:46.5582903Z ##[endgroup]
+build-and-lint	Setup Node.js	2026-06-07T18:33:46.9815561Z Attempting to download 20...
+build-and-lint	Setup Node.js	2026-06-07T18:33:47.9465223Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+build-and-lint	Setup Node.js	2026-06-07T18:33:48.5354256Z Extracting ...
+build-and-lint	Setup Node.js	2026-06-07T18:33:48.5465821Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/53776e4f-6070-4682-9944-ab231d0ab2ab -f /home/runner/work/_temp/44d61f3d-05f8-4ded-8a21-bf0998a4b0b2
+build-and-lint	Setup Node.js	2026-06-07T18:33:49.5243539Z Adding to the cache ...
+build-and-lint	Setup Node.js	2026-06-07T18:33:51.4194108Z ##[group]Environment details
+build-and-lint	Setup Node.js	2026-06-07T18:33:51.6332401Z node: v20.20.2
+build-and-lint	Setup Node.js	2026-06-07T18:33:51.6333194Z npm: 10.8.2
+build-and-lint	Setup Node.js	2026-06-07T18:33:51.6333474Z yarn: 1.22.22
+build-and-lint	Setup Node.js	2026-06-07T18:33:51.6333936Z ##[endgroup]
+build-and-lint	Setup Node.js	2026-06-07T18:33:51.6355929Z [command]/opt/hostedtoolcache/node/20.20.2/x64/bin/npm config get cache
+build-and-lint	Setup Node.js	2026-06-07T18:33:51.7361065Z /home/runner/.npm
+build-and-lint	Setup Node.js	2026-06-07T18:33:51.9715634Z Cache hit for: node-cache-Linux-x64-npm-a8e5a3856c8f72c940d495d03936e95b692ea4b28b5651b57f538f63f73b331c
+build-and-lint	Setup Node.js	2026-06-07T18:33:53.2199839Z Received 4194304 of 7308319 (57.4%), 4.0 MBs/sec
+build-and-lint	Setup Node.js	2026-06-07T18:33:53.2443820Z Received 7308319 of 7308319 (100.0%), 6.8 MBs/sec
+build-and-lint	Setup Node.js	2026-06-07T18:33:53.2444727Z Cache Size: ~7 MB (7308319 B)
+build-and-lint	Setup Node.js	2026-06-07T18:33:53.2474819Z [command]/usr/bin/tar -xf /home/runner/work/_temp/6b1e69ba-01ec-4ea6-89fd-240faa345d0b/cache.tzst -P -C /home/runner/work/Trabalho-Individual-GCES/Trabalho-Individual-GCES --use-compress-program unzstd
+build-and-lint	Setup Node.js	2026-06-07T18:33:53.3253342Z Cache restored successfully
+build-and-lint	Setup Node.js	2026-06-07T18:33:53.3313138Z Cache restored from key: node-cache-Linux-x64-npm-a8e5a3856c8f72c940d495d03936e95b692ea4b28b5651b57f538f63f73b331c
+build-and-lint	Install dependencies	´╗┐2026-06-07T18:33:53.3529064Z ##[group]Run npm ci --include=dev
+build-and-lint	Install dependencies	2026-06-07T18:33:53.3529468Z ^[[36;1mnpm ci --include=dev^[[0m
+build-and-lint	Install dependencies	2026-06-07T18:33:53.3561476Z shell: /usr/bin/bash -e {0}
+build-and-lint	Install dependencies	2026-06-07T18:33:53.3562108Z ##[endgroup]
+build-and-lint	Install dependencies	2026-06-07T18:33:54.6312625Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+build-and-lint	Install dependencies	2026-06-07T18:33:54.7343195Z npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+build-and-lint	Install dependencies	2026-06-07T18:33:55.2728599Z 
+build-and-lint	Install dependencies	2026-06-07T18:33:55.2729763Z added 332 packages, and audited 333 packages in 2s
+build-and-lint	Install dependencies	2026-06-07T18:33:55.2730307Z 
+build-and-lint	Install dependencies	2026-06-07T18:33:55.2730633Z 50 packages are looking for funding
+build-and-lint	Install dependencies	2026-06-07T18:33:55.2731220Z   run `npm fund` for details
+build-and-lint	Install dependencies	2026-06-07T18:33:55.2742112Z 
+build-and-lint	Install dependencies	2026-06-07T18:33:55.2742779Z found 0 vulnerabilities
+build-and-lint	Audit dependencies	´╗┐2026-06-07T18:33:55.2918751Z ##[group]Run npm audit --audit-level=moderate
+build-and-lint	Audit dependencies	2026-06-07T18:33:55.2919159Z ^[[36;1mnpm audit --audit-level=moderate^[[0m
+build-and-lint	Audit dependencies	2026-06-07T18:33:55.2946177Z shell: /usr/bin/bash -e {0}
+build-and-lint	Audit dependencies	2026-06-07T18:33:55.2946460Z ##[endgroup]
+build-and-lint	Audit dependencies	2026-06-07T18:33:55.7814752Z found 0 vulnerabilities
+build-and-lint	Lint frontend and backend	´╗┐2026-06-07T18:33:55.7897498Z ##[group]Run npm run lint
+build-and-lint	Lint frontend and backend	2026-06-07T18:33:55.7897806Z ^[[36;1mnpm run lint^[[0m
+build-and-lint	Lint frontend and backend	2026-06-07T18:33:55.7923693Z shell: /usr/bin/bash -e {0}
+build-and-lint	Lint frontend and backend	2026-06-07T18:33:55.7923970Z ##[endgroup]
+build-and-lint	Lint frontend and backend	2026-06-07T18:33:55.9016330Z 
+build-and-lint	Lint frontend and backend	2026-06-07T18:33:55.9016834Z > mkjs-workspace@1.0.0 lint
+build-and-lint	Lint frontend and backend	2026-06-07T18:33:55.9017297Z > eslint server/**/*.js game/src/**/*.js
+build-and-lint	Lint frontend and backend	2026-06-07T18:33:55.9017562Z 
+build-and-lint	Build frontend and backend checks	´╗┐2026-06-07T18:33:56.3067249Z ##[group]Run npm run build
+build-and-lint	Build frontend and backend checks	2026-06-07T18:33:56.3067570Z ^[[36;1mnpm run build^[[0m
+build-and-lint	Build frontend and backend checks	2026-06-07T18:33:56.3094312Z shell: /usr/bin/bash -e {0}
+build-and-lint	Build frontend and backend checks	2026-06-07T18:33:56.3094589Z ##[endgroup]
+build-and-lint	Build frontend and backend checks	2026-06-07T18:33:56.4195269Z 
+build-and-lint	Build frontend and backend checks	2026-06-07T18:33:56.4195674Z > mkjs-workspace@1.0.0 build
+build-and-lint	Build frontend and backend checks	2026-06-07T18:33:56.4196323Z > npm run build:server && npm run build:game
+build-and-lint	Build frontend and backend checks	2026-06-07T18:33:56.4196608Z 
+build-and-lint	Build frontend and backend checks	2026-06-07T18:33:56.5363025Z 
+build-and-lint	Build frontend and backend checks	2026-06-07T18:33:56.5363632Z > mkjs-workspace@1.0.0 build:server
+build-and-lint	Build frontend and backend checks	2026-06-07T18:33:56.7167798Z > node --check server/server.js && node --check server/games.js && node --check server/db.js
+build-and-lint	Build frontend and backend checks	2026-06-07T18:33:56.7168542Z 
+build-and-lint	Build frontend and backend checks	2026-06-07T18:33:56.7168552Z 
+build-and-lint	Build frontend and backend checks	2026-06-07T18:33:56.7168928Z > mkjs-workspace@1.0.0 build:game
+build-and-lint	Build frontend and backend checks	2026-06-07T18:33:56.7169738Z > node --check game/src/mk.js && node --check game/src/movement.js
+build-and-lint	Build frontend and backend checks	2026-06-07T18:33:56.7170242Z 
+build-and-lint	Run tests	´╗┐2026-06-07T18:33:56.7760777Z ##[group]Run npm test
+build-and-lint	Run tests	2026-06-07T18:33:56.7761057Z ^[[36;1mnpm test^[[0m
+build-and-lint	Run tests	2026-06-07T18:33:56.7786775Z shell: /usr/bin/bash -e {0}
+build-and-lint	Run tests	2026-06-07T18:33:56.7787048Z ##[endgroup]
+build-and-lint	Run tests	2026-06-07T18:33:56.8865143Z 
+build-and-lint	Run tests	2026-06-07T18:33:56.8865657Z > mkjs-workspace@1.0.0 test
+build-and-lint	Run tests	2026-06-07T18:33:56.8866299Z > jest --runInBand
+build-and-lint	Run tests	2026-06-07T18:33:56.8866645Z 
+build-and-lint	Run tests	2026-06-07T18:33:57.5260194Z PASS server/__tests__/games.test.js
+build-and-lint	Run tests	2026-06-07T18:33:57.5269751Z   Ô£ô create, retrieve and remove game in GameCollection (4 ms)
+build-and-lint	Run tests	2026-06-07T18:33:57.5270121Z 
+build-and-lint	Run tests	2026-06-07T18:33:57.5288393Z Test Suites: 1 passed, 1 total
+build-and-lint	Run tests	2026-06-07T18:33:57.5288766Z Tests:       1 passed, 1 total
+build-and-lint	Run tests	2026-06-07T18:33:57.5289056Z Snapshots:   0 total
+build-and-lint	Run tests	2026-06-07T18:33:57.5289300Z Time:        0.316 s
+build-and-lint	Run tests	2026-06-07T18:33:57.5439893Z Ran all test suites.
+build-and-lint	Post Setup Node.js	´╗┐2026-06-07T18:33:57.5551089Z Post job cleanup.
+build-and-lint	Post Setup Node.js	2026-06-07T18:33:57.7100915Z Cache hit occurred on the primary key node-cache-Linux-x64-npm-a8e5a3856c8f72c940d495d03936e95b692ea4b28b5651b57f538f63f73b331c, not saving cache.
+build-and-lint	Post Checkout repository	´╗┐2026-06-07T18:33:57.7255807Z Post job cleanup.
+build-and-lint	Post Checkout repository	2026-06-07T18:33:57.8220968Z [command]/usr/bin/git version
+build-and-lint	Post Checkout repository	2026-06-07T18:33:57.8256665Z git version 2.54.0
+build-and-lint	Post Checkout repository	2026-06-07T18:33:57.8300324Z Temporarily overriding HOME='/home/runner/work/_temp/fa88753c-59c6-4ce8-ad7e-f7ed044ea4fe' before making global git config changes
+build-and-lint	Post Checkout repository	2026-06-07T18:33:57.8301352Z Adding repository directory to the temporary git global config as a safe directory
+build-and-lint	Post Checkout repository	2026-06-07T18:33:57.8306292Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Trabalho-Individual-GCES/Trabalho-Individual-GCES
+build-and-lint	Post Checkout repository	2026-06-07T18:33:57.8344536Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-lint	Post Checkout repository	2026-06-07T18:33:57.8376441Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-lint	Post Checkout repository	2026-06-07T18:33:57.8621400Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-lint	Post Checkout repository	2026-06-07T18:33:57.8648545Z http.https://github.com/.extraheader
+build-and-lint	Post Checkout repository	2026-06-07T18:33:57.8665336Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build-and-lint	Post Checkout repository	2026-06-07T18:33:57.8694877Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-lint	Post Checkout repository	2026-06-07T18:33:57.8942464Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-lint	Post Checkout repository	2026-06-07T18:33:57.8974261Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-lint	Complete job	´╗┐2026-06-07T18:33:57.9379037Z Cleaning up orphan processes
+build-and-lint	Complete job	2026-06-07T18:33:57.9746686Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/setup-node@v4. Actions will be forced to run with Node.js 24 by default starting June 16th, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
