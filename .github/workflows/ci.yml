@@ -40,6 +40,9 @@ jobs:
       - name: Build production Docker images
         run: docker compose -f docker-compose.prod.yml build
 
+      - name: Render Kubernetes manifests
+        run: kubectl kustomize k8s > /tmp/mkjs-k8s.yaml
+
       - name: Run tests with coverage
         run: npm run test:coverage
 

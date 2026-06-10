@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mkjs-config
+  namespace: mkjs
+data:
+  NODE_ENV: production
+  PORT: "55555"
+  PGHOST: db
+  PGPORT: "5432"
+  PGUSER: mkjs
+  PGDATABASE: mkjs

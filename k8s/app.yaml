@@ -1,0 +1,65 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: app
+  namespace: mkjs
+  labels:
+    app.kubernetes.io/name: mkjs-app
+    app.kubernetes.io/part-of: mkjs
+spec:
+  type: ClusterIP
+  ports:
+    - name: http
+      port: 55555
+      targetPort: http
+  selector:
+    app.kubernetes.io/name: mkjs-app
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mkjs-app
+  namespace: mkjs
+  labels:
+    app.kubernetes.io/name: mkjs-app
+    app.kubernetes.io/part-of: mkjs
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: mkjs-app
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: mkjs-app
+        app.kubernetes.io/part-of: mkjs
+    spec:
+      containers:
+        - name: app
+          image: ghcr.io/leticiaresende23/trabalho-individual-gces-app:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 55555
+          envFrom:
+            - configMapRef:
+                name: mkjs-config
+            - secretRef:
+                name: mkjs-secret
+          readinessProbe:
+            tcpSocket:
+              port: http
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            tcpSocket:
+              port: http
+            initialDelaySeconds: 20
+            periodSeconds: 20
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi

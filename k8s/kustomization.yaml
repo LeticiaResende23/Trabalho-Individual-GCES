@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - namespace.yaml
+  - configmap.yaml
+  - secret.yaml
+  - postgres.yaml
+  - app.yaml
+  - nginx.yaml
+images:
+  - name: ghcr.io/leticiaresende23/trabalho-individual-gces-app
+    newTag: latest
+  - name: ghcr.io/leticiaresende23/trabalho-individual-gces-nginx
+    newTag: latest
