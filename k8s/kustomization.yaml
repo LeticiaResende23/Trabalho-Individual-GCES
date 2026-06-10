@@ -7,6 +7,8 @@ resources:
   - postgres.yaml
   - app.yaml
   - nginx.yaml
+  - cert-manager.yaml
+  - ingress.yaml
 images:
   - name: ghcr.io/leticiaresende23/trabalho-individual-gces-app
     newTag: latest
