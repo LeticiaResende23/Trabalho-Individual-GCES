@@ -3,3 +3,8 @@
 **/node_modules
 **/npm-debug.log
 .DS_Store
+coverage
+coverage-sonar
+build_and_lint_logs
+build_and_lint_logs.zip
+buildlog*.txt
